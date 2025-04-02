@@ -1,0 +1,188 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Derman - Pure. Ethical. Enduring.{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section position-relative">
+    <div class="hero-image" style="background-image: url('{% static 'images/heroImage.png' %}');">
+        <div class="hero-overlay"></div>
+        <div class="container-fluid">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-12">
+                    <div class="hero-content">
+                        <div class="hero-header text-center">
+                          <h1 class="hero-title">
+                            <span>D</span><span>e</span><span>r</span><span>m</span><span>a</span><span>n</span>
+                            <span>F</span><span>r</span><span>a</span><span>n</span><span>k</span><span>i</span><span>n</span><span>c</span><span>e</span><span>n</span><span>s</span><span>e</span>
+                          </h1>
+                            <p class="tagline">Pure. Ethical. Enduring.</p>
+                            <div class="hero-buttons">
+                              <a href="/about" class="btn btn-primary me-3">Discover Our Story</a>
+                              <a href="/products" class="btn btn-outline-light">Explore Products</a>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications Section -->
+<section class="py-2">
+  <div class="container text-center">
+      <div class="row row-cols-2 row-cols-md-4 g-3 justify-content-center align-items-center">
+          <div class="col">
+              <a href="https://www.ams.usda.gov/services/organic-certification" target="_blank" class="certification-link">
+                  <img src="{% static 'images/USDAOrganic.png' %}" alt="USDA Organic Certification" class="img-fluid certification-logo">
+              </a>
+          </div>
+          <div class="col">
+              <a href="https://www.fairwild.org/fairwild-certification" target="_blank" class="certification-link">
+                  <img src="{% static 'images/fairWild.png' %}" alt="FairWild Certification" class="img-fluid certification-logo">
+              </a>
+          </div>
+          <div class="col">
+              <a href="https://www.controlunion.com/service/certification/" target="_blank" class="certification-link">
+                  <img src="{% static 'images/controlUnion.png' %}" alt="Control Union Global Certification" class="img-fluid certification-logo">
+              </a>
+          </div>
+          <div class="col">
+              <a href="https://agriculture.ec.europa.eu/farming/organic-farming/organics-glance_en" target="_blank" class="certification-link">
+                  <img src="{% static 'images/euCert_edited.avif' %}" alt="European Union Organic Certification" class="img-fluid certification-logo">
+              </a>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-2">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2>Our Ethical Commitment</h2>
+                <p>Derman is a producer and supplier of frankincense from Africa to global markets in Asia, Middle East, Europe and USA.</p>
+                <p>We play a key role in the preservation and conservation of boswellia sacra (commonly known as frankincense or the olibanum-tree), which are predominantly found in the country of Somalia.</p>
+                <p>Our commitment to sustainability of this rare and precious tree drives every aspect of our operations, from harvesting to distribution.</p>
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="text-center mb-4">Our Sustainable Practices</h3>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="text-center">
+                                    <i class="fas fa-leaf"></i>
+                                    <h4>Sustainable Harvesting</h4>
+                                    <p>Responsible practices that preserve the natural ecosystem</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-center">
+                                    <i class="fas fa-seedling"></i>
+                                    <h4>Reforestation</h4>
+                                    <p>Active participation in tree replanting programs</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-center">
+                                    <i class="fas fa-chart-line"></i>
+                                    <h4>Supply Monitoring</h4>
+                                    <p>Regular assessment of supply chains</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-center">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <h4>Education</h4>
+                                    <p>Training and resources for local communities</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Global Presence Section -->
+<section class="bg-light py-4">
+    <div class="container text-center">
+        <h2>Our Global Reach</h2>
+        <div class="row align-items-center mt-4">
+            <div class="col-lg-3">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-globe-asia"></i>
+                                <h4>Asia</h4>
+                                <p>Serving markets across the Asian continent</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-globe-europe"></i>
+                                <h4>Europe</h4>
+                                <p>European distribution network</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="{% static 'images/bowl.png' %}" alt="Frankincense Bowl" class="img-fluid">
+            </div>
+            <div class="col-lg-3">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mosque"></i>
+                                <h4>Middle East</h4>
+                                <p>Traditional markets in the Middle East</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-globe-americas"></i>
+                                <h4>USA</h4>
+                                <p>North American market presence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% comment %} <!-- Newsletter Section -->
+<section class="py-4">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2>Join Our Journey</h2>
+                <p class="mb-4">Subscribe to our newsletter for updates on sustainability initiatives and product launches</p>
+                <form class="row g-3 justify-content-center">
+                    <div class="col-md-8">
+                        <input type="email" class="form-control" placeholder="Enter your email address">
+                    </div>
+                    <div class="col-md-auto">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section> {% endcomment %}
+{% endblock %} 

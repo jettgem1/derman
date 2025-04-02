@@ -1,0 +1,223 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Products - Derman{% endblock %}
+
+{% block content %}
+<div class="container py-5 mt-5">
+    <!-- Header Section -->
+    <div class="row mb-5">
+        <div class="col-12 text-center">
+            <h1 class="display-4 mb-4">Our Products</h1>
+            <p class="lead text-muted">Discover our premium collection of Boswellia species from Northern Somalia</p>
+        </div>
+    </div>
+
+    <!-- Boswellia Carterii Section -->
+    <div class="row mb-5 align-items-center">
+        <div class="col-md-6">
+            <div class="position-relative">
+                <img src="{% static 'images/frankTree.avif' %}" class="img-fluid rounded shadow-lg" alt="Boswellia Carterii Resin">
+                <div class="position-absolute bottom-0 start-0 p-3 bg-dark bg-opacity-50 text-white rounded-bottom">
+                    <h4 class="mb-0">Boswellia Carterii</h4>
+                    <small>Locally known as "moxor" or "beeyo"</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-4">
+                        <h2 class="card-title mb-0">Tree Characteristics</h2>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="p-3 bg-light rounded">
+                                <h6 class="p-green mb-2">Height</h6>
+                                <p class="mb-0">2-8 meters</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-3 bg-light rounded">
+                                <h6 class="p-green mb-2">Production Age</h6>
+                                <p class="mb-0">8-10 years</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h5 class="p-green mb-3">Resin Extraction Process</h5>
+                        <p class="card-text">
+                            The resin is extracted through small, shallow incisions on the trunk or branches. As a milky substance, it coagulates upon contact with air and is carefully collected by hand. Our vast boswellia forests, existing for millennia in modern-day Somalia, produce an extremely high-quality resin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Essential Oil Breakdown Section -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-4">
+                        <h2 class="card-title mb-0">Essential Oil Analysis</h2>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="p-4 bg-light rounded h-100">
+                                <h4 class="p-green mb-3">Origin</h4>
+                                <p class="mb-0">Somalia</p>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="p-4 bg-light rounded h-100">
+                                <h4 class="p-green mb-3">Characteristics</h4>
+                                <p class="mb-0">Boswellia carterii produces a distinctive and complex aroma that is deep, fresh and floral.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="p-green mb-3">Essential Oil Composition</h4>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Component</th>
+                                        <th>Percentage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>α-Pinene</td>
+                                        <td><span class="badge bg-primary">36.52%</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Myrcene</td>
+                                        <td><span class="badge bg-primary">15.00%</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Limonene</td>
+                                        <td><span class="badge bg-primary">14.48%</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>β-Caryophyllene</td>
+                                        <td><span class="badge bg-primary">6.42%</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sabinene</td>
+                                        <td><span class="badge bg-primary">4.96%</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>β-Pinene</td>
+                                        <td><span class="badge bg-primary">1.35%</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>p-Cymene</td>
+                                        <td><span class="badge bg-primary">1.18%</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>α-Thujene</td>
+                                        <td><span class="badge bg-primary">0.65%</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>trans-Verbenol</td>
+                                        <td><span class="badge bg-primary">0.25%</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>α-Phellandrene</td>
+                                        <td><span class="badge bg-primary">0.01%</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Maydi Section -->
+    <div class="row mb-5 align-items-center">
+        <div class="col-md-6">
+            <div class="position-relative">
+                <img src="{% static 'images/maydiGum.png' %}" class="img-fluid rounded shadow-lg" alt="Maydi Frankincense Chewing Gum">
+                <div class="position-absolute bottom-0 start-0 p-3 bg-dark bg-opacity-50 text-white rounded-bottom">
+                    <h4 class="mb-0">Maydi Frankincense</h4>
+                    <small>Known as "Yagcar" by the Somalis</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-4">
+                        <h2 class="card-title mb-0">Premium Quality</h2>
+                    </div>
+                    <p class="card-text">
+                        The rare and treasured Maydi Frankincense is considered superior to other varieties. Found exclusively on the steep vertical slopes of coastal Northern Somalia, it produces high-quality resins, herbs, botanicals, and oils.
+                    </p>
+                    <div class="mt-4">
+                        <h5 class="p-green mb-3">Quality Grades</h5>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <div class="p-3 bg-light rounded">
+                                    <h6 class="p-green mb-2">Premium Grades</h6>
+                                    <ul class="list-unstyled mb-0">
+                                        <li>1. mushaad</li>
+                                        <li>2. mujarwal</li>
+                                        <li>3. fas kebir</li>
+                                        <li>4. fas saghir</li>
+                                    </ul>
+                                    <small class="text-muted">Exported to Saudi Arabia for chewing gum</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 bg-light rounded">
+                                    <h6 class="p-green mb-2">Standard Grades</h6>
+                                    <ul class="list-unstyled mb-0">
+                                        <li>5. jabaanjib</li>
+                                        <li>6. shorta</li>
+                                        <li>7. slif</li>
+                                        <li>8. foox</li>
+                                    </ul>
+                                    <small class="text-muted">Exported to China, France, Germany, and England</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h5 class="p-green mb-3">Global Applications</h5>
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <div class="p-3 bg-light rounded h-100">
+                                    <h6 class="p-green mb-2">Medicinal Use</h6>
+                                    <p class="mb-0">Exported to China for traditional medicine applications</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="p-3 bg-light rounded h-100">
+                                    <h6 class="p-green mb-2">Religious Ceremonies</h6>
+                                    <p class="mb-0">Used as incense in France, Germany, and England</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="p-3 bg-light rounded h-100">
+                                    <h6 class="p-green mb-2">Chewing Gum</h6>
+                                    <p class="mb-0">Premium grades exclusively exported to Saudi Arabia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h5 class="p-green mb-3">Aroma Profile</h5>
+                        <p class="card-text">
+                            Features a deeper, more balsamic and resinous aroma than B. sacra and B. carterii species, with its own wonderful light and lively top notes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
