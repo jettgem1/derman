@@ -5,19 +5,19 @@
       "use": "@vercel/python"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/static/(.*)",
-      "dest": "/static/$1"
+      "source": "/static/:path*",
+      "destination": "/static/:path*"
     },
     {
-      "src": "/(.*)",
-      "dest": "api/wsgi.py"
+      "source": "/(.*)",
+      "destination": "api/wsgi.py"
     }
   ],
   "headers": [
     {
-      "source": "/static/(.*)",
+      "source": "/static/:path*",
       "headers": [
         {
           "key": "Cache-Control",
@@ -26,7 +26,7 @@
       ]
     },
     {
-      "source": "/static/css/(.*)",
+      "source": "/static/css/:path*",
       "headers": [
         {
           "key": "Content-Type",
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "source": "/static/js/(.*)",
+      "source": "/static/js/:path*",
       "headers": [
         {
           "key": "Content-Type",
@@ -44,7 +44,7 @@
       ]
     },
     {
-      "source": "/static/images/(.*)",
+      "source": "/static/images/:path*",
       "headers": [
         {
           "key": "Content-Type",
