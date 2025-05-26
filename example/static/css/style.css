@@ -480,12 +480,10 @@ h2::after {
   }
 
   .navbar-brand {
-    color: var(--color-charcoal) !important;
     font-size: 1.5rem;
   }
 
   .nav-link {
-    color: var(--color-charcoal) !important;
     margin: 0.5rem 0;
     text-align: center;
   }
