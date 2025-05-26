@@ -9,7 +9,7 @@
   --color-white: #ffffff;
   --color-purple: #320E3B;
   --color-derman: #e6b939;
-  --color-sienna: rgb(120, 41, 15);
+  --color-sienna: rgb(72, 20, 3);
   --color-pink: #E0ACD5;
   --color-green: #335145;
 
@@ -277,7 +277,7 @@ h2::after {
   padding: 0.5rem 1rem !important;
   transition: all 0.3s ease;
   border: 1px solid var(--color-sienna);
-  background-color: rgba(120, 41, 15);
+  background-color: var(--color-sienna);
   margin-left: 5px;
 }
 
