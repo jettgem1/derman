@@ -239,9 +239,101 @@ h2::after {
   transition: all 0.3s ease;
 }
 
-.navbar.scrolled {
-  background-color: var(--color-sienna) !important;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+/* Menu Button Styles */
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Perfume Bottle Icon */
+.navbar-toggler::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 8px;
+  background-color: var(--color-derman);
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 24px;
+  border: 2px solid var(--color-derman);
+  border-radius: 2px 2px 0 0;
+  transition: all 0.3s ease;
+}
+
+/* Bottle Cap */
+.navbar-toggler .bottle-cap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  border: 2px solid var(--color-derman);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* Bottle Base */
+.navbar-toggler .bottle-base {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 4px;
+  border: 2px solid var(--color-derman);
+  border-radius: 0 0 4px 4px;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler:hover::before,
+.navbar-toggler:hover::after,
+.navbar-toggler:hover .bottle-cap,
+.navbar-toggler:hover .bottle-base {
+  background-color: var(--color-sienna);
+  border-color: var(--color-sienna);
+}
+
+.navbar.scrolled .navbar-toggler::before,
+.navbar.scrolled .navbar-toggler::after,
+.navbar.scrolled .navbar-toggler .bottle-cap,
+.navbar.scrolled .navbar-toggler .bottle-base {
+  background-color: var(--color-derman);
+  border-color: var(--color-derman);
+}
+
+.navbar.scrolled .navbar-toggler:hover::before,
+.navbar.scrolled .navbar-toggler:hover::after,
+.navbar.scrolled .navbar-toggler:hover .bottle-cap,
+.navbar.scrolled .navbar-toggler:hover .bottle-base {
+  background-color: var(--color-sienna);
+  border-color: var(--color-sienna);
+}
+
+/* Remove the old menu text */
+.navbar-toggler-icon {
+  display: none;
 }
 
 .navbar-brand {
