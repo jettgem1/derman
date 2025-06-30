@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}News - Derman{% endblock %}
+
+{% block content %}
+<div class="container py-5 mt-5">
+    <!-- Header Section -->
+    <div class="row mb-5">
+        <div class="col-12 text-center">
+            <h1 class="display-4 mb-4">Latest News</h1>
+            <p class="lead text-muted">Stay updated with the latest news, achievements, and developments from Derman</p>
+        </div>
+    </div>
+
+    <!-- News Articles Section -->
+    <div class="row g-4">
+        <!-- Mohamed Aden CEO Article -->
+        <!-- FairWild Certification Article -->
+        <div class="col-lg-8 mx-auto">
+          <article class="card border-0 shadow-sm mb-4">
+            <div class="card-body p-4 p-md-5">
+                <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mb-3 gap-2">
+                    <span class="badge bg-info me-0 me-sm-3 mb-2 mb-sm-0">Interview</span>
+                    <small class="text-muted">July 2024</small>
+                </div>
+                <h3 class="card-title mb-3 fs-4 fs-md-3">Meet Mohamed Aden, CEO of Derman Oil</h3>
+                <p class="card-text mb-4 fs-6 fs-md-5">
+                    Mohamed Aden, CEO of Derman Oil, shares insights on what makes Somalia the world's premier source of frankincense and how DermanOil ensures ethical sourcing and full traceability from tree to bottle.
+                </p>
+                <ul class="mb-4 ps-3">
+                    <li class="mb-2"><strong>Somalia's Advantage:</strong> Unique climate, landscape, and centuries of indigenous knowledge produce the world's finest frankincense.</li>
+                    <li class="mb-2"><strong>Traceability:</strong> Every batch is tracked from harvest to shipment, with rigorous quality and documentation protocols.</li>
+                    <li><strong>Ethical Sourcing:</strong> DermanOil partners directly with local harvesters, ensuring fair prices and sustainable practices.</li>
+                </ul>
+                <div class="d-grid justify-content-between align-items-center gap-2">
+                    <a href="https://www.linkedin.com/pulse/draft/preview/7341588649907494913/?companyAuthorUrn=urn:li:fsd_company:106565099" target="_blank" class="btn btn-primary news-article-btn w-100 w-sm-auto">
+                        Read Full Article
+                    </a>
+                    <small class="text-muted mt-2 mt-sm-0">Source: LinkedIn</small>
+                </div>
+            </div>
+        </article>
+            <article class="card border-0 shadow-sm mb-4">
+                <div class="card-body p-4 p-md-5">
+                    <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mb-3 gap-2">
+                        <span class="badge bg-success me-0 me-sm-3 mb-2 mb-sm-0">Certification</span>
+                        <small class="text-muted">January 2024</small>
+                    </div>
+                    <h3 class="card-title mb-3 fs-4 fs-md-3">Derman Oil Achieves FairWild Certification</h3>
+                    <p class="card-text mb-4 fs-6 fs-md-5">
+                        Derman Oil has been officially certified by FairWild Foundation, reinforcing our commitment to sustainability and ethical sourcing. As a leading exporter of premium frankincense resin and essential oils from <em>Boswellia carteri</em> and <em>Boswellia frereana</em>, this certification validates our sustainable harvesting practices and community-focused approach.
+                    </p>
+                    <div class="row mb-4 gy-4">
+                        <div class="col-12 col-md-6">
+                            <h5 class="p-green">Key Highlights:</h5>
+                            <ul class="list-unstyled ps-3">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>EU Organic certified</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Direct sourcing from Somalia</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>10% revenue for community development</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Full supply chain traceability</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h5 class="p-green">Our Mission:</h5>
+                            <p class="small mb-0">Beyond premium products, we invest in preserving Boswellia trees through sustainable harvesting, education, and technical training while ensuring fair prices for local communities.</p>
+                        </div>
+                    </div>
+                    <div class="d-grid  justify-content-between align-items-center gap-2">
+                        <a href="https://www.fairwild.org/all-fairwild-participants/dermanoils" target="_blank" class="btn btn-primary news-article-btn w-100 w-sm-auto">
+                            Read Full Article
+                        </a>
+                        <small class="text-muted mt-2 mt-sm-0">Source: FairWild Foundation</small>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <!-- Coming Soon Section -->
+    <div class="row mt-5">
+        <div class="col-12 text-center">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-5">
+                    <i class="fas fa-newspaper fa-3x p-green mb-4"></i>
+                    <h3 class="mb-3">More News Coming Soon</h3>
+                    <p class="text-muted mb-0">
+                        We're constantly working on new initiatives and partnerships. Check back regularly for updates on our sustainability projects, product launches, and industry recognition.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

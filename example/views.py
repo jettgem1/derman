@@ -12,8 +12,12 @@ def about(request):
 
 
 def contact(request):
-        return render(request, 'contact.html')
+    return render(request, 'contact.html')
 
 
 def products(request):
     return render(request, 'products.html')
+
+
+def news(request):
+    return render(request, 'news.html')
